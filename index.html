@@ -2,10 +2,12 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title>Pray for Ukraine Today</title>
+    <title>
+      Pray for Ukraine Today - Novenas - Nine-day prayers and podcasts
+    </title>
     <meta
       name="description"
-      content="An international list of novenas to pray for the peace in Ukraine."
+      content="An international list of novenas to pray for peace in Ukraine."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,18 +16,19 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
 
-    <link rel="manifest" href="//site.webmanifest" />
-    <link rel="apple-touch-icon" href="//icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="//css/normalize.css" />
-    <link rel="stylesheet" href="//css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <meta name="theme-color" content="#fafafa" />
     <style>
       body {
         background: linear-gradient(151deg, #7eacff 0%, #ffffff 100%);
-        padding-bottom: 100%;
+        padding-bottom: 5%;
+        padding-top: 2%;
       }
       html {
         font-family: monospace;
@@ -64,10 +67,20 @@
 
   <body>
     <div class="main">
-      <h1>🇺🇦Pray for Peace in Ukraine🕊️</h1>
+      <select id="change-language">
+        <option value="fr" selected="selected">Français</option>
+        <option value="en">English</option>
+      </select>
 
-      <h2>
+      <h1 data-lang="en">🇺🇦Pray for Peace in Ukraine🕊️</h1>
+      <h1 data-lang="fr">🇺🇦Prions pour la paix en Ukraine🕊️</h1>
+
+      <h2 data-lang="en">
         🙏Novena prayer communities on
+        <a href="https://hozana.org/">Hozana</a>
+      </h2>
+      <h2 data-lang="fr">
+        🙏Neuvaines en communautés de prière sur
         <a href="https://hozana.org/">Hozana</a>
       </h2>
 
@@ -94,7 +107,8 @@
         </li>
       </ul>
 
-      <h2>📄Novenas as PDF booklets</h2>
+      <h2 data-lang="en">📄Novenas as PDF booklets</h2>
+      <h2 data-lang="fr">📄Neuvaines en livrets PDF</h2>
 
       <ul>
         <li>
@@ -133,7 +147,11 @@
           >
         </li>
       </ul>
-      <h2>🎧Prayer novenas podcasts (SoundCloud)</h2>
+      <h2 data-lang="en">🎧Prayer novenas podcasts (SoundCloud)</h2>
+      <h2 data-lang="fr">
+        🎧Neuvaines de prière au format podcast (SoundCloud)
+      </h2>
+
       <ul>
         <li>
           <a href="https://lc.cx/novenaUkraineSoundcloudFR"
@@ -148,7 +166,7 @@
       </ul>
     </div>
 
-    <script type="text/javascript" src="//js/i18n-language.js"></script>
+    <script type="text/javascript" src="js/i18n-language.js"></script>
     <!--
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
