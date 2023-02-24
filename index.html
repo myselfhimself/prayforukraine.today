@@ -244,7 +244,8 @@
         </li>
       </ul>
     </div>
-    <script type="text/javascript" src="js/i18n-language.js" defer></script>
+    <!-- embedding "js/i18n-language.js" -->
+    <script type="text/javascript">!function(){let e=document.createElement("style");function n(e){document.querySelectorAll("[data-lang]").forEach((function(e){e.classList.contains("unselect-language")||e.classList.add("unselect-language")})),document.querySelectorAll(`[data-lang="${e}"]`).forEach((function(e){e.classList.contains("unselect-language")&&e.classList.remove("unselect-language")})),document.getElementById("change-language").value=e}e.innerHTML=".unselect-language{display: none;}",document.getElementsByTagName("head")[0].appendChild(e),document.getElementById("change-language").addEventListener("change",(function(e){!function(){let e=document.getElementById("change-language"),t=e.options[e.selectedIndex].value;localStorage.setItem("lang",t),n(t)}()}));try{n(function(){let e=(window.navigator.userLanguage||window.navigator.language).toLowerCase(),n=null;try{n=localStorage.getItem("lang")}catch(e){}return null!==n&&(e=n),0===document.querySelectorAll(`[data-lang="${e}"]`).length&&(e="en"),e}())}catch(e){}}();</script>
     <!--
     <script src="js/plugins.js" defer></script>
     <script src="js/vendor/modernizr-3.11.2.min.js" async></script>
