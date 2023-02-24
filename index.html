@@ -20,9 +20,6 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
-
     <meta name="theme-color" content="#fafafa" />
     <style>
       body {
@@ -100,12 +97,14 @@
   <body>
     <div class="main">
       <select id="change-language">
-        <option value="fr" selected="selected">Français</option>
-        <option value="en">English</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="en">🇬🇧 English</option>
+        <option value="uk">🇺🇦 Українська</option>
       </select>
 
       <h1 data-lang="en">🇺🇦Pray for Peace in Ukraine🕊️</h1>
       <h1 data-lang="fr">🇺🇦Prions pour la paix en Ukraine🕊️</h1>
+      <h1 data-lang="uk">🇺🇦Моліться за мир в Україні🕊️</h1>
 
       <h2 data-lang="en">
         🙏Novena prayer communities on
@@ -114,6 +113,10 @@
       <h2 data-lang="fr">
         🙏Neuvaines en communautés de prière sur
         <a href="https://hozana.org/">Hozana</a>
+      </h2>
+      <h2 data-lang="es">
+        🙏Новенни в молитовних спільнотах на
+        <a href="https://hozana.org/">Хозану</a>
       </h2>
 
       <ul>
@@ -141,6 +144,7 @@
 
       <h2 data-lang="en">📄Novenas as PDF booklets</h2>
       <h2 data-lang="fr">📄Neuvaines en livrets PDF</h2>
+      <h2 data-lang="uk">📄Ньовени в буклетах PDF</h2>
 
       <ul>
         <li>
@@ -183,7 +187,7 @@
       <h2 data-lang="fr">
         🎧Neuvaines de prière au format podcast (SoundCloud)
       </h2>
-
+      <h2 data-lang="uk">🎧Подкаст Молитви (SoundCloud)</h2>
       <ul>
         <li>
           <a href="https://lc.cx/novenaUkraineSoundcloudFR"
@@ -196,18 +200,17 @@
           >
         </li>
         <li>
-          <a href="https://soundcloud.com/hozana-1/sets/novena-internacional-por-la"
+          <a
+            href="https://soundcloud.com/hozana-1/sets/novena-internacional-por-la"
             >🇪🇸 Novena Internacional por la Paz en Ucrania</a
           >
         </li>
       </ul>
     </div>
-
-    <script type="text/javascript" src="js/i18n-language.js"></script>
+    <script type="text/javascript" src="js/i18n-language.js" defer></script>
     <!--
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
--->
+    <script src="js/plugins.js" defer></script>
+    <script src="js/vendor/modernizr-3.11.2.min.js" async></script>
+    -->
   </body>
 </html>
