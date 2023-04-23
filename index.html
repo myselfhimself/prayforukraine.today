@@ -406,14 +406,14 @@
                 ).toLowerCase(),
                 n = null;
               try {
-                n = localStorage.getItem("lang");
+                n = document.location?.hash?.substring(1) || localStorage.getItem("lang");
               } catch (e) {}
-              return (
+              let retval = (
                 null !== n && (e = n),
                 0 === document.querySelectorAll(`[data-lang="${e}"]`).length &&
                   (e = "en"),
                 e
-              );
+              ); console.log(retval); return retval;
             })()
           );
         } catch (e) {}
